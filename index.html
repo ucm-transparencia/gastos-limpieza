@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Costes por limpieza y reparación de actos vandálicos — Portal de Transparencia UCM</title>
+<meta name="description" content="Costes por limpieza y reparación de actos vandálicos. Universidad Complutense de Madrid. Portal de Transparencia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 20px; line-height: 1.5; color: #3d3d3d; }
+
+  .container { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 14px; box-shadow: 0 8px 32px rgba(0,0,0,.10); overflow: hidden; }
+
+  /* HEADER */
+  .header { background: linear-gradient(135deg, #b71234 0%, #8b0d27 100%); color: #fff; padding: 18px 28px; display: flex; align-items: center; gap: 14px; }
+  .header-icon { width: 42px; height: 42px; background: rgba(255,255,255,.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .header h1 { font-size: 16px; font-weight: 600; line-height: 1.3; }
+  .header h1 span { display: block; font-size: 11.5px; font-weight: 400; opacity: .75; margin-top: 2px; }
+
+  /* MAIN */
+  .main { padding: 28px 28px 36px; }
+
+  /* NOTA INTRO */
+  .intro { font-size: 13px; color: #6b7280; line-height: 1.6; background: #f8f9fa; border: 1px solid #e5e7eb; border-left: 4px solid #b71234; border-radius: 8px; padding: 14px 16px; margin-bottom: 28px; }
+
+  /* TABLA */
+  .table-wrap { border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 1px 4px rgba(0,0,0,.05); margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead tr { background: linear-gradient(135deg, #b71234, #8b0d27); color: #fff; }
+  thead th { padding: 11px 16px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+  thead th:first-child { text-align: left; }
+  thead th:last-child { text-align: right; }
+  tbody tr { border-bottom: 1px solid #e5e7eb; transition: background .18s; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: #fef7f8; }
+  tbody tr:nth-child(even) { background: #fafafa; }
+  tbody tr:nth-child(even):hover { background: #fef7f8; }
+  td { padding: 11px 16px; vertical-align: middle; }
+  td.year { font-weight: 700; color: #8b0d27; font-family: 'DM Serif Display', Georgia, serif; font-size: 16px; }
+  td.amount { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.partial { text-align: right; white-space: nowrap; }
+  .partial-val { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .partial-badge { display: inline-block; background: #fff7ed; color: #9a3412; border: 1px solid #fed7aa; border-radius: 5px; padding: 1px 7px; font-size: 10px; font-weight: 700; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
+
+  /* BARRA DE VARIACIÓN */
+  .bar-cell { padding: 11px 16px 11px 0; width: 120px; }
+  .bar-track { height: 7px; background: #f0e4e7; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #b71234, #e0455a); transition: width .8s cubic-bezier(.4,0,.2,1); }
+
+  /* NOTA AL PIE */
+  .nota { font-size: 11.5px; color: #6b7280; font-style: italic; margin-bottom: 24px; padding-left: 4px; }
+
+  /* FOOTER */
+  .footer { padding: 14px 28px; background: #f0f2f5; border-top: 1px solid #e5e7eb; text-align: center; font-size: 13px; color: #6b7280; }
+  .footer a { color: #8b0d27; text-decoration: none; font-weight: 600; }
+  .footer a:hover { text-decoration: underline; }
+  .footer-icon { color: #b71234; font-size: 11px; margin-left: 3px; }
+
+  @media (max-width: 480px) {
+    body { padding: 10px; }
+    .header { padding: 14px 18px; }
+    .main { padding: 20px 18px 28px; }
+    .footer { padding: 12px 18px; }
+    .bar-cell { display: none; }
+    thead th.bar-th { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header class="header">
+    <div class="header-icon" aria-hidden="true">🧹</div>
+    <h1>
+      Costes por limpieza y reparación de actos vandálicos
+      <span>Portal de Transparencia · Universidad Complutense de Madrid</span>
+    </h1>
+  </header>
+
+  <main class="main">
+
+    <p class="intro">
+      Los importes reflejados corresponden exclusivamente a labores de limpieza de pintadas,
+      protección antigrafiti y mantenimiento de fachadas y monumentos en los campus y centros de la UCM.
+      No incluyen otros costes derivados de actos vandálicos, como limpieza general, mantenimiento
+      o reposición de mobiliario urbano.
+    </p>
+
+    <div class="table-wrap" role="region" aria-label="Costes anuales por limpieza de actos vandálicos">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Año</th>
+            <th scope="col" style="text-align:right">Importe (€)</th>
+            <th scope="col" class="bar-th" style="text-align:left; padding-left:0; width:120px">Relativo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="year">2022</td>
+            <td class="amount">100.664,87&thinsp;€</td>
+            <td class="bar-cell" aria-hidden="true"><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></td>
+          </tr>
+          <tr>
+            <td class="year">2023</td>
+            <td class="amount">75.221,22&thinsp;€</td>
+            <td class="bar-cell" aria-hidden="true"><div class="bar-track"><div class="bar-fill" style="width:74.7%"></div></div></td>
+          </tr>
+          <tr>
+            <td class="year">2024</td>
+            <td class="amount">98.415,84&thinsp;€</td>
+            <td class="bar-cell" aria-hidden="true"><div class="bar-track"><div class="bar-fill" style="width:97.8%"></div></div></td>
+          </tr>
+          <tr>
+            <td class="year">2025</td>
+            <td class="partial">
+              <span class="partial-val">79.527,95&thinsp;€</span>
+              <span class="partial-badge">hasta sept.</span>
+            </td>
+            <td class="bar-cell" aria-hidden="true"><div class="bar-track"><div class="bar-fill" style="width:79%"></div></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="nota">(*) El importe de 2025 está actualizado hasta septiembre.</p>
+
+  </main>
+
+  <footer class="footer">
+    Datos facilitados por la
+    <a href="https://www.ucm.es/directorio/?eid=962" target="_blank" rel="noopener">
+      Vicegerencia Económica<span class="footer-icon" aria-hidden="true"> ↗</span>
+    </a>
+    &nbsp;·&nbsp;
+    <a href="https://www.ucm.es/portaldetransparencia/limpieza-actos-vandalicos" target="_blank" rel="noopener">
+      Portal de Transparencia UCM<span class="footer-icon" aria-hidden="true"> ↗</span>
+    </a>
+  </footer>
+
+</div>
+
+</body>
+</html>
